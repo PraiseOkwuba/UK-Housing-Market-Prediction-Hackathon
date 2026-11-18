@@ -1,0 +1,4 @@
+Linear Regression
+MAE: £248,605
+RMSE: £335,215
+R²: 0.77

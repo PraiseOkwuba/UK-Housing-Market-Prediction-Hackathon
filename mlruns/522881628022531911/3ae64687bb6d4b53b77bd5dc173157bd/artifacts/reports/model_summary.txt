@@ -1,0 +1,4 @@
+Random Forest
+MAE: £165,644
+RMSE: £236,947
+R²: 0.88

@@ -1,0 +1,46 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.7
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: xgb
+    xgb_version: 3.0.1
+is_signature_from_type_hint: false
+mlflow_version: 2.22.0
+model_size_bytes: 902488
+model_uuid: 370d165f5a3c4015a5b14d735a27433a
+prompts: null
+run_id: 887e7480ae0b476aa13065494e6c3812
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Location_City", "required": true}, {"type":
+    "double", "name": "Location_District", "required": true}, {"type": "double", "name":
+    "Property_Type", "required": true}, {"type": "double", "name": "Square_Footage",
+    "required": true}, {"type": "double", "name": "Bedrooms", "required": true}, {"type":
+    "double", "name": "Bathrooms", "required": true}, {"type": "double", "name": "Year_Built",
+    "required": true}, {"type": "double", "name": "Build_Quality_Rating", "required":
+    true}, {"type": "double", "name": "Nearby_Amenities_Score", "required": true},
+    {"type": "double", "name": "Market_Trend_Index", "required": true}, {"type": "double",
+    "name": "Agent_Commission_Percentage", "required": true}, {"type": "double", "name":
+    "Days_On_Market", "required": true}, {"type": "double", "name": "Transaction_Type",
+    "required": true}, {"type": "double", "name": "Age", "required": true}, {"type":
+    "double", "name": "Price_per_Sqft", "required": true}, {"type": "double", "name":
+    "BedBath_Interaction", "required": true}, {"type": "double", "name": "Listing_Year",
+    "required": true}, {"type": "double", "name": "Listing_Month", "required": true},
+    {"type": "double", "name": "Listing_Season", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-09-03 22:20:09.743134'
